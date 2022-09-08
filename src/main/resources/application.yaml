@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./fanduel/db
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    schemas: [ TRADING_SOLUTION ]
+  h2:
+    console:
+      enabled: true
+server:
+  servlet:
+    context-path: /fan-duel/trading/solution
