@@ -21,7 +21,9 @@ I would have liked to implemented Cucumber blackbox tests for BDD, but ran short
 To build and run code:
 
 The project is a Spring boot app built and run with Maven. I have included an IntelliJ run configuration in the project,
-so you can run it utilizing that.
+so once you have imported the maven project, you can run it utilizing that.
+
+Alternatively, you can run the code from the command line with the command `./mvnw spring-boot:run`
 
 To test the code once started, I have included a [postman collection](src/main/resources/FanDuel.postman_collection.json) 
 with all the test steps from the challenge defined and ordered.
