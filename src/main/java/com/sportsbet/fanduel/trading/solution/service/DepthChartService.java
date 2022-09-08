@@ -111,7 +111,7 @@ public class DepthChartService {
       .filter(playerPos -> playerPos.getDepth() > playerPosition.getDepth())
       .forEach(playerPos -> playerPos.setDepth(playerPos.getDepth() - 1));
 
-    log.info("DepthChartService::removePlayerPosition save updated player position entities for squad id={} and position id={}.", playerPosition.getSquadId(), positionEntity.getPositionId());
+    log.info("DepthChartService::removePlayerPosition save updated player position entities for squad id={} and position={}.", playerPosition.getSquadId(), position);
     playerPositionRepository.saveAll(squadPositions);
 
     return playerPosition.getPlayer();
