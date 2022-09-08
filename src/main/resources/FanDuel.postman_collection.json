@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "94154ff2-7e0f-4147-ba99-a13a9870bb71",
+		"name": "FanDuel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Depth chart add player - Tom Brady",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"QB\",\n    \"playerNumber\": 12,\n    \"positionDepth\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Depth chart add player - Blaine Gabbert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"QB\",\n    \"playerNumber\": 11,\n    \"positionDepth\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Depth chart add player - Kyle Trask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"QB\",\n    \"playerNumber\": 2,\n    \"positionDepth\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Depth chart add player - Mike Evans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"LWR\",\n    \"playerNumber\": 13,\n    \"positionDepth\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Depth chart add player - Jaelon Darden",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"LWR\",\n    \"playerNumber\": 1,\n    \"positionDepth\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - Depth chart add player - Scott Miller",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"LWR\",\n    \"playerNumber\": 10,\n    \"positionDepth\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - Depth chart get backups - Tom Brady",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"position\", \"QB\")",
+							"pm.environment.set(\"playerNumber\", 12)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/{{position}}/player/{{playerNumber}}/backups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"{{position}}",
+						"player",
+						"{{playerNumber}}",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8 - Depth chart get backups - Jaelon Darden",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"position\", \"LWR\")",
+							"pm.environment.set(\"playerNumber\", 1)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/{{position}}/player/{{playerNumber}}/backups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"{{position}}",
+						"player",
+						"{{playerNumber}}",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9 - Depth chart get backups - Mike Evans",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"position\", \"QB\")",
+							"pm.environment.set(\"playerNumber\", 13)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/{{position}}/player/{{playerNumber}}/backups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"{{position}}",
+						"player",
+						"{{playerNumber}}",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 - Depth chart get backups - Blaine Gabbert",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"position\", \"QB\")",
+							"pm.environment.set(\"playerNumber\", 11)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/{{position}}/player/{{playerNumber}}/backups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"{{position}}",
+						"player",
+						"{{playerNumber}}",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11 - Depth chart get backups - Kyle Trask",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"position\", \"QB\")",
+							"pm.environment.set(\"playerNumber\", 2)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/{{position}}/player/{{playerNumber}}/backups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"{{position}}",
+						"player",
+						"{{playerNumber}}",
+						"backups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12 - Get full depth chart",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13 - Depth chart remove player - Mike Evans",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"position\": \"LWR\",\n    \"playerNumber\": 13\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart/player/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart",
+						"player",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14 - Get full depth chart",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fan-duel/trading/solution/depth-chart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fan-duel",
+						"trading",
+						"solution",
+						"depth-chart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
