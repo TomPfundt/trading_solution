@@ -31,6 +31,9 @@ with all the test steps from the challenge defined and ordered.
 The app is using embedded H2 file-based storage, which will store the db data in the project root dir ./fanduel/db.
 If you wish to view the db during assesment, it can be accessed in a browser at [this url](http://localhost:8080/fan-duel/trading/solution/h2-console)
 
+The required config is:
+![db config](db_console_config.png "Password: password")
+
 I did send through the below queries but did not get a response, so I have added my assumptions:
 
 1. It says in the description "You can also assume that a number within the team uniquely identifies that player.".
