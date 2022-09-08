@@ -20,7 +20,7 @@ I would have liked to implemented Cucumber blackbox tests for BDD, but ran short
 
 To build and run code:
 
-The project is a Spring boot app built and run with Maven. I have included an IntelliJ run configuration in the project,
+The project is a Java 11 Spring boot app built and run with Maven. I have included an IntelliJ run configuration in the project,
 so once you have imported the maven project, you can run it utilizing that.
 
 Alternatively, you can run the code from the command line with the command `./mvnw spring-boot:run`
